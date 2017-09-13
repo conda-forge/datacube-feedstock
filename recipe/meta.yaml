@@ -40,7 +40,7 @@ requirements:
     - xarray >=0.9
     - celery >=4
     - paramiko
-    - redis  # [not win]
+    - redis-py
     - sshtunnel
     - tqdm
 
