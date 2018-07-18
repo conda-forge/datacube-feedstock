@@ -29,7 +29,7 @@ requirements:
     - jsonschema
     - netcdf4
     - numpy
-    - pathlib
+    - pathlib  # [not py3k]
     - psycopg2
     - pypeg2
     - python-dateutil
