@@ -17,14 +17,16 @@ from multiple satellite and other acquisition systems.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/datacube-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/datacube-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/datacube-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/datacube-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/datacube-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/datacube-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/datacube-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/datacube-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/datacube-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/datacube-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/datacube-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/datacube-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/datacube/badges/version.svg)](https://anaconda.org/conda-forge/datacube)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/datacube/badges/downloads.svg)](https://anaconda.org/conda-forge/datacube)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-datacube-green.svg)](https://anaconda.org/conda-forge/datacube) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/datacube.svg)](https://anaconda.org/conda-forge/datacube) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/datacube.svg)](https://anaconda.org/conda-forge/datacube) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/datacube.svg)](https://anaconda.org/conda-forge/datacube) |
 
 Installing datacube
 ===================
@@ -69,6 +71,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
