@@ -1,7 +1,7 @@
 {% set name = "datacube" %}
 {% set reponame = "datacube-core" %}
-{% set version = "1.5.4" %}
-{% set sha256 = "c32b7134b801f40d7196118ded5e39c21d2b6b23a65817a1c8eaae4e7423b7b3" %}
+{% set version = "1.5.5" %}
+{% set sha256 = "f82d2188dfce493a1162c06162f53a065786a0f686230f7f188262c26eabf5e2" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,9 @@ requirements:
   run:
     - python
     - cachetools
+    - cloudpickle
     - dask
+    - futures  # [not py3k]
     - gdal
     - jsonschema
     - netcdf4
