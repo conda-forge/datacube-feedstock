@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
 {% set reponame = "datacube-core" %}
-{% set version = "1.5.5" %}
+{% set version = "1.6.0" %}
 {% set sha256 = "f82d2188dfce493a1162c06162f53a065786a0f686230f7f188262c26eabf5e2" %}
 
 package:
@@ -24,19 +24,18 @@ requirements:
   run:
     - python
     - cachetools
-    - cloudpickle
+    - click
+    - cloudpickle >= 0.4.0
     - dask
-    - futures  # [not py3k]
     - gdal
     - jsonschema
     - netcdf4
     - numpy
-    - pathlib  # [not py3k]
     - psycopg2
     - pypeg2
     - python-dateutil
     - pyyaml
-    - rasterio
+    - rasterio >= 1.0.2
     - singledispatch
     - sqlalchemy
     - xarray >=0.9
@@ -44,6 +43,7 @@ requirements:
     - paramiko
     - redis-py
     - sshtunnel
+    - toolz
     - tqdm
 
 
