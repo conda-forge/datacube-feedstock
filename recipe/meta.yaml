@@ -25,7 +25,7 @@ requirements:
     - python
     - cachetools
     - click
-    - cloudpickle >= 0.4.0
+    - cloudpickle >=0.4.0
     - dask
     - gdal
     - jsonschema
@@ -35,7 +35,7 @@ requirements:
     - pypeg2
     - python-dateutil
     - pyyaml
-    - rasterio >= 1.0.2
+    - rasterio >=1.0.2
     - singledispatch
     - sqlalchemy
     - xarray >=0.9
