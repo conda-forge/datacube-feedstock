@@ -22,7 +22,7 @@ requirements:
     - setuptools
     - pytest-runner
   run:
-    - python
+    - python >=3.5
     - cachetools
     - click
     - cloudpickle >=0.4.0
