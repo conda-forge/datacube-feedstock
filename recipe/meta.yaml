@@ -1,7 +1,7 @@
 {% set name = "datacube" %}
 {% set reponame = "datacube-core" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "ae0d496dbd744e60110744372c4172656d10fc962296bb8fc98f8dc8d58f7c35" %}
+{% set version = "1.6.1" %}
+{% set sha256 = "ec40ce9f6af8ef9e850d6e3ddbb9f024fff17cc7797ca9f01c1991316825eed5" %}
 
 package:
   name: {{ name|lower }}
