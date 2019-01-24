@@ -1,16 +1,15 @@
 {% set name = "datacube" %}
 {% set reponame = "datacube-core" %}
-{% set version = "1.6.1" %}
-{% set sha256 = "ec40ce9f6af8ef9e850d6e3ddbb9f024fff17cc7797ca9f01c1991316825eed5" %}
+{% set version = "1.6.2" %}
+{% set sha256 = "55d777e67612de6d56b09b99812dc75d7a4d49d5dd3992e507d93ca6b77d51ac" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/opendatacube/datacube-core/archive/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
 
 build:
   number: 0
@@ -50,6 +49,38 @@ requirements:
 test:
   imports:
     - datacube
+    - datacube.api
+    - datacube.drivers
+    - datacube.drivers.netcdf
+    - datacube.drivers.postgres
+    - datacube.execution
+    - datacube.index
+    - datacube.model
+    - datacube.scripts
+    - datacube.storage
+    - datacube.testutils
+    - datacube.ui
+    - datacube.utils
+    - datacube_apps
+    - datacube_apps.stacker
+  commands:
+    - datacube --help
+    - datacube-search --help
+    - datacube-stacker --help
+    - datacube-worker --help
+    - datacube-fixer --help
+    - datacube-ncml --help
+    - datacube-simple-replica --help
+  requires:
+    - compliance-checker
+    - hypothesis
+    - mock
+    - objgraph
+    - pycodestyle
+    - pylint
+    - pytest
+    - pytest-cov
+    - pytest-timeout
 
 about:
   home: http://www.opendatacube.org
