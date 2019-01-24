@@ -1,3 +1,7 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About datacube
 ==============
 
@@ -17,9 +21,8 @@ from multiple satellite and other acquisition systems.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/datacube-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/datacube-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/datacube-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/datacube-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/datacube-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/datacube-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/datacube-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/datacube-feedstock)
 
 Current release info
 ====================
@@ -52,6 +55,8 @@ conda search datacube --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -107,3 +112,14 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@GypsyBojangles](https://github.com/GypsyBojangles/)
+* [@Kirill888](https://github.com/Kirill888/)
+* [@andrewdhicks](https://github.com/andrewdhicks/)
+* [@jeremyh](https://github.com/jeremyh/)
+* [@omad](https://github.com/omad/)
+* [@snowman2](https://github.com/snowman2/)
+
