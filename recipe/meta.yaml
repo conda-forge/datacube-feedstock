@@ -12,10 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-#  skip: True  # [py<35]
+  skip: True  # [py<35]
+# Doesn't seem to work with 'noarch' since it include python 2
+#  noarch: python
 
 requirements:
   build:
