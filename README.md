@@ -21,7 +21,8 @@ from multiple satellite and other acquisition systems.
 Current build status
 ====================
 
-All platforms: ![noarch disabled](https://img.shields.io/badge/noarch-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/datacube-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/datacube-feedstock)
 
 Current release info
 ====================
