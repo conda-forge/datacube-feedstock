@@ -79,16 +79,17 @@ test:
     - datacube-fixer --help
     - datacube-ncml --help
     - datacube-simple-replica --help
-  requires:
-    - compliance-checker
-    - hypothesis
-    - mock
-    - objgraph
-    - pycodestyle
-    - pylint
-    - pytest
-    - pytest-cov
-    - pytest-timeout
+# The following may be required if we start actually running our tests.
+# For now, we're just testing that everything seems to have built okay
+#  requires:
+#    - compliance-checker
+#    - hypothesis
+#    - mock
+#    - pycodestyle
+#    - pylint
+#    - pytest
+#    - pytest-cov
+#    - pytest-timeout
 
 about:
   home: http://www.opendatacube.org
