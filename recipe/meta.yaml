@@ -18,7 +18,7 @@ build:
   skip: True  # [py<35]
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - pytest-runner
@@ -26,7 +26,7 @@ requirements:
     - pip
     - python
   run:
-    - python >=3.5
+    - python
     - cachetools
     - click
     - cloudpickle >=0.4.0
