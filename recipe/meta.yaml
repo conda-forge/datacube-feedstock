@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3
+    - setuptools
   run:
     - python
     - cachetools
