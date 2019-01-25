@@ -15,10 +15,10 @@ build:
   noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<35]
+#  skip: True  # [py<35]
 
 requirements:
-  host:
+  build:
     - python
     - setuptools
     - pytest-runner
