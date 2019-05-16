@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.6.2" %}
-{% set sha256 = "55d777e67612de6d56b09b99812dc75d7a4d49d5dd3992e507d93ca6b77d51ac" %}
+{% set version = "1.7" %}
+{% set sha256 = "16405c318926d7eab9ed2f52e17f8e86e6f0652a99991eb56f44dc247a3dffe3" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
