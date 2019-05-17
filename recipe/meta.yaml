@@ -11,11 +11,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
   noarch: python
+  entry_points:
+    - datacube = datacube.scripts.cli_app:cli
+    - datacube-search = datacube.scripts.search_tool:cli
+    - datacube-stacker = datacube_apps.stacker:main
+    - datacube-worker = datacube.execution.worker:main
+    - datacube-fixer = datacube_apps.stacker:fixer_main
+    - datacube-ncml = datacube_apps.ncml:ncml_app
 
 requirements:
   host:
