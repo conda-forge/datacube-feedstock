@@ -11,8 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 2
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
   noarch: python
@@ -25,18 +24,21 @@ build:
     - datacube-ncml = datacube_apps.ncml:ncml_app
 
 requirements:
-  host:
+  build:
     - pip
-    - python >=3
+    - python >= 3
     - setuptools
     - pytest-runner
+    - sphinx
+    - sphinx_click
+    - click
   run:
-    - python
+    - python >= 3.5
     - cachetools
     - click
-    - cloudpickle >=0.4.0
+    - cloudpickle >= 0.4.0
     - dask
-    - gdal
+    - gdal < 3
     - jsonschema
     - netcdf4
     - numpy
@@ -44,11 +46,11 @@ requirements:
     - pypeg2
     - python-dateutil
     - pyyaml
-    - rasterio >=1.0.2
+    - rasterio >= 1.0.2
     - singledispatch
     - sqlalchemy
-    - xarray >=0.9
-    - celery >=4
+    - xarray >= 0.9
+    - celery >= 4
     - paramiko
     - redis-py
     - sshtunnel
