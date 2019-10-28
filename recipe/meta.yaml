@@ -26,19 +26,19 @@ build:
 requirements:
   build:
     - pip
-    - python >= 3
+    - python >=3.5
     - setuptools
     - pytest-runner
     - sphinx
-    - sphinx_click
+    - sphinx-click
     - click
   run:
-    - python >= 3.5
+    - python >=3.5
     - cachetools
     - click
-    - cloudpickle >= 0.4.0
+    - cloudpickle >=0.4.0
     - dask
-    - gdal < 3
+    - gdal <3
     - jsonschema
     - netcdf4
     - numpy
@@ -46,11 +46,11 @@ requirements:
     - pypeg2
     - python-dateutil
     - pyyaml
-    - rasterio >= 1.0.2
+    - rasterio >=1.0.2
     - singledispatch
     - sqlalchemy
-    - xarray >= 0.9
-    - celery >= 4
+    - xarray >=0.9
+    - celery >=4
     - paramiko
     - redis-py
     - sshtunnel
