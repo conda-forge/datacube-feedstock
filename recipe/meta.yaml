@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 3
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
   noarch: python
@@ -40,6 +40,7 @@ requirements:
     - dask
     - gdal <3
     - jsonschema
+    - lark-parser
     - netcdf4
     - numpy
     - psycopg2
