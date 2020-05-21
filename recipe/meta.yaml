@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.7" %}
-{% set sha256 = "16405c318926d7eab9ed2f52e17f8e86e6f0652a99991eb56f44dc247a3dffe3" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "66f30d0047fafc6f9dfd4df271aafe078f2db3a36ec457a3b8bf943435c73f8d" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
   noarch: python
@@ -38,7 +38,7 @@ requirements:
     - click
     - cloudpickle >=0.4.0
     - dask
-    - gdal <3
+    - pyproj
     - jsonschema
     - lark-parser
     - netcdf4
@@ -48,7 +48,6 @@ requirements:
     - python-dateutil
     - pyyaml
     - rasterio >=1.0.2
-    - singledispatch
     - sqlalchemy
     - xarray >=0.9
     - celery >=4
