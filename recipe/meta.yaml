@@ -39,6 +39,7 @@ requirements:
     - cloudpickle >=0.4.0
     - dask
     - pyproj
+    - shapely
     - jsonschema
     - lark-parser
     - netcdf4
