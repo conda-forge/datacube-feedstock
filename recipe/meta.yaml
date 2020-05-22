@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
   noarch: python
@@ -26,14 +26,16 @@ build:
 requirements:
   build:
     - pip
-    - python >=3.5
+    - python >=3.6
     - setuptools
+    - setuptools_scm >=3.4
+    - toml
     - pytest-runner
     - sphinx
     - sphinx-click
     - click
   run:
-    - python >=3.5
+    - python >=3.6
     - cachetools
     - click
     - cloudpickle >=0.4.0
