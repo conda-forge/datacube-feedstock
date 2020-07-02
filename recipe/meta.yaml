@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.8.0" %}
-{% set sha256 = "66f30d0047fafc6f9dfd4df271aafe078f2db3a36ec457a3b8bf943435c73f8d" %}
+{% set version = "1.8.1" %}
+{% set sha256 = "b45843ba1b3f92f4f55ec89a8056d05ead5d05a497d6ff27757cf100d78334a9" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
 #  skip: True  # [py<35]
 # Doesn't seem to work with 'noarch' since it include python 2
   noarch: python
@@ -103,7 +103,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary:  Data analysis environment for earth observation data
+  summary: Data analysis environment for earth observation data
   description: |
     Open Data Cube Core provides an integrated gridded data analysis environment
     for decades of analysis ready earth observation satellite and related data
