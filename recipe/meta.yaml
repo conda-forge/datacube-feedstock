@@ -11,8 +11,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-#  skip: True  # [py<35]
-# Doesn't seem to work with 'noarch' since it include python 2
   number: 0
   noarch: python
   entry_points:
