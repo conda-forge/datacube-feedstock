@@ -45,7 +45,6 @@ requirements:
     - netcdf4
     - numpy
     - psycopg2
-    - pypeg2
     - python-dateutil
     - pyyaml
     - rasterio >=1.0.2
