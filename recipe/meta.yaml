@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.8.3" %}
-{% set sha256 = "d1e1a49c615fdaebf6e6008da7f925bc09e9d7bf94f259a1c596d266d1c36649" %}
+{% set version = "1.8.4" %}
+{% set sha256 = "0644c610b52dec4218d718093bb3989acbc67856b1baefd4de41f8c4822bce0a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
@@ -22,7 +22,7 @@ build:
     - datacube-ncml = datacube_apps.ncml:ncml_app
 
 requirements:
-  build:
+  host:
     - pip
     - python >=3.6
     - setuptools
