@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.8.8" %}
-{% set sha256 = "e4f6cc2d5142b83e5b5d782c0eb3d437e85dc31a45ebfd96a43eee598a9f225b" %}
+{% set version = "1.8.9" %}
+{% set sha256 = "78c34d26a75c2b56634730082219311732a5d536997e4f8af91bc94d84720f1e" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
@@ -93,7 +93,7 @@ about:
 extra:
   recipe-maintainers:
     - andrewdhicks
-    - GypsyBojangles
+    - SpacemanPaul
     - jeremyh
     - Kirill888
     - omad
