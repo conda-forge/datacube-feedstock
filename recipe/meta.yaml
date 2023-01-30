@@ -36,7 +36,7 @@ requirements:
     - pyyaml
     - rasterio
     - singledispatch
-    - sqlalchemy
+    - sqlalchemy <2.0
     - xarray >=0.9
     - celery >=4
     - paramiko
