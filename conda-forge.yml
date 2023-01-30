@@ -1,6 +1,6 @@
-travis:
-  secure:
-    BINSTAR_TOKEN: HarDLDm4KDmQLyz6CwkQ7JdhxZZN1E3/xiPL07KtpDSeFf1lPNjpQKpwquwEwcPuyorfOoDW3pG9c+H02fXD5wRltAMZoUjjzc2zmvXrw86vzv3Bgt3J41+9CA3+bqNzrxJ2+XRDsjwmEYfI2sHn7g0C1aPWpO+JHu1wr/dfpqH0JoL4CtJ/UJ0uehuxGYY6OzYRFIxd7I7hOhhBXSYYwxvoh8TYpp8iA3BWoxSMS4fXoYdJ+cj+T151guJhA4yO5QUBL04b4E8uWA19werh5aGS1AL/HBNnBY0wnYx3aa4m3PcEX7rLYIU9P1FS4bf/gGtUpDx9WFFJ9XLNTAOS5SSWvrsoUEPSl3jzwvLjjra4Wc1eBkDCp0xqKXws/3WcU9pgdziflf3bMGiRPD2/rnsQL5EfX5CKx7QDPzX9rq/ITjUIGGBOwEXa13kbfBtfJ+I5j261akHAS8ywXGBmMpLF9p5fckPJvRdEN18XSQOLqjMKEdp+KwcDlHLHTvHsga9gOLkGZ/xpuo0umb9bBGWzxPrN0OvMzZmfXmgzXKHExsmqACQeOWjNhKR4+gO1UBlazIiMvSBpN1KT5mlkMCIhF8tw++Z5eZC3/GOSCn3z9Bph2GbZ8Yh/J5JoBYge9ExXHLyXw+bs7Qyc0JBNhFhyL7kFhyn/Ftrw+HNNO0I=
-appveyor:
-  secure:
-    BINSTAR_TOKEN: ipv/06DzgA7pzz2CIAtbPxZSsphDtF+JFyoWRnXkn3O8j7oRe3rzqj3LOoq2DZp4
+conda_forge_output_validation: true
+github:
+  branch_name: main
+  tooling_branch_name: main
+conda_build:
+  pkg_format: '2'
