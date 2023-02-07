@@ -29,7 +29,7 @@ requirements:
   run:
     - python >=3.8
     - affine
-    - botocore
+    - attrs
     - boto3
     - cachetools
     - click >=5.0
@@ -37,7 +37,7 @@ requirements:
     - dask-core
     - distributed
     - pyproj >=2.5
-    - shapely >=1.6.4
+    - shapely >=2
     - jsonschema
     - lark
     - netcdf4
@@ -54,7 +54,7 @@ requirements:
     - celery >=4
     - paramiko
     - redis-py
-    - sshtunnel
+    - ruamel.yaml
     - toolz
     - tqdm
 
