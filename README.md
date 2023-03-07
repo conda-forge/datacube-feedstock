@@ -1,11 +1,11 @@
-About datacube
-==============
+About datacube-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datacube-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.opendatacube.org
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/datacube-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data analysis environment for earth observation data
 
