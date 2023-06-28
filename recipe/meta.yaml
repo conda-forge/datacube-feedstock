@@ -31,10 +31,12 @@ requirements:
     - affine
     - attrs
     - boto3
+    - botocore
     - cachetools
     - click >=5.0
     - cloudpickle >=0.4
     - dask-core
+    - deprecat
     - distributed
     - pyproj >=2.5
     - shapely >=2
@@ -43,6 +45,7 @@ requirements:
     - netcdf4
     - numpy
     - pandas
+    - packaging
     - psycopg2
     - python-dateutil
     - pyyaml
