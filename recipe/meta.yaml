@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.8.13" %}
-{% set sha256 = "b8529d3c75dcfd2a5819a665288f0ca59ef8604fabff3b4b5a536b7bb9cf8708" %}
+{% set version = "1.8.14" %}
+{% set sha256 = "eb5b6bf293177881f6f5e75d73e08569a46cb1489424c8968bcf24d9311d78c6" %}
 
 package:
   name: {{ name|lower }}
@@ -31,10 +31,12 @@ requirements:
     - affine
     - attrs
     - boto3
+    - botocore
     - cachetools
     - click >=5.0
     - cloudpickle >=0.4
     - dask-core
+    - deprecat
     - distributed
     - pyproj >=2.5
     - shapely >=2
@@ -43,6 +45,7 @@ requirements:
     - netcdf4
     - numpy
     - pandas
+    - packaging
     - psycopg2
     - python-dateutil
     - pyyaml
