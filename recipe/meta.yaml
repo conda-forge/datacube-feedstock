@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.8.14" %}
-{% set sha256 = "eb5b6bf293177881f6f5e75d73e08569a46cb1489424c8968bcf24d9311d78c6" %}
+{% set version = "1.8.15" %}
+{% set sha256 = "0ce028e6f080e3f7b8dfb586be89252da60e79119191d288ca7340167fc1dba6" %}
 
 package:
   name: {{ name|lower }}
