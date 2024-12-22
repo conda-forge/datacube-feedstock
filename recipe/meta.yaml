@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
@@ -22,12 +22,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - affine
     - attrs
     - boto3
@@ -79,6 +79,7 @@ test:
     - datacube-worker --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.opendatacube.org
