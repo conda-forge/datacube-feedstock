@@ -29,6 +29,7 @@ requirements:
   run:
     - python >=3.10
     - affine
+    - antimeridian
     - attrs >=18.1
     - boto3
     - botocore
