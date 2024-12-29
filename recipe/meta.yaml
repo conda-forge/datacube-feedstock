@@ -16,7 +16,6 @@ build:
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
     - datacube-search = datacube.scripts.search_tool:cli
-    - datacube-worker = datacube.execution.worker:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
