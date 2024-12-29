@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.8.20" %}
-{% set sha256 = "d80d586198f0210fe543300829b7f447fe7a8ebd2345ea9850f9c0ff9ffbaa71" %}
+{% set version = "1.9.0" %}
+{% set sha256 = "c3d0f97e79436ffa1a48bc79909e9d3abe13d6d363395b14285b5a8fae31aa7b" %}
 
 package:
   name: {{ name|lower }}
@@ -11,25 +11,25 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
     - datacube-search = datacube.scripts.search_tool:cli
-    - datacube-worker = datacube.execution.worker:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python >=3.10
     - setuptools
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >={{ python_min }}
+    - python >=3.10
     - affine
-    - attrs
+    - antimeridian
+    - attrs >=18.1
     - boto3
     - botocore
     - cachetools
@@ -44,13 +44,15 @@ requirements:
     - lark
     - netcdf4
     - numpy
+    - odc-geo
     - pandas
     - packaging
     - psycopg2
     - python-dateutil
     - pyyaml
-    - rasterio >=1.3.2
-    - sqlalchemy <2.0
+    - rasterio >=1.3.11
+    - sqlalchemy >=2.0
+    - alembic
     - geoalchemy2
     - xarray >2022.6.0
     - ruamel.yaml
@@ -63,7 +65,8 @@ test:
     - datacube.drivers
     - datacube.drivers.netcdf
     - datacube.drivers.postgres
-    - datacube.execution
+    - datacube.drivers.postgis
+    - datacube.cfg
     - datacube.index
     - datacube.model
     - datacube.scripts
@@ -76,10 +79,9 @@ test:
     - pip check
     - datacube --help
     - datacube-search --help
-    - datacube-worker --help
   requires:
     - pip
-    - python {{ python_min }}
+    - python >=3.10
 
 about:
   home: http://www.opendatacube.org
