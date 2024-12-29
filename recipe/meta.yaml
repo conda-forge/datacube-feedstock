@@ -65,7 +65,8 @@ test:
     - datacube.drivers
     - datacube.drivers.netcdf
     - datacube.drivers.postgres
-    - datacube.execution
+    - datacube.drivers.postgis
+    - datacube.cfg
     - datacube.index
     - datacube.model
     - datacube.scripts
