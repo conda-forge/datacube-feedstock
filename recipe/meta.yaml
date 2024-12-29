@@ -79,7 +79,6 @@ test:
     - pip check
     - datacube --help
     - datacube-search --help
-    - datacube-worker --help
   requires:
     - pip
     - python >=3.10
