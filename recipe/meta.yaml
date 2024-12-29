@@ -81,7 +81,7 @@ test:
     - datacube-worker --help
   requires:
     - pip
-    - python {{ python_min }}
+    - python >=3.10
 
 about:
   home: http://www.opendatacube.org
