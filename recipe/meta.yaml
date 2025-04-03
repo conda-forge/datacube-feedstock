@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
@@ -35,7 +35,7 @@ requirements:
     - cachetools
     - click >=5.0
     - cloudpickle >=0.4
-    - dask-core <2024.11.0
+    - dask-core
     - deprecat
     - distributed
     - pyproj >=2.5
@@ -43,8 +43,8 @@ requirements:
     - jsonschema >=4.18
     - lark
     - netcdf4
-    - numpy
-    - odc-geo
+    - numpy >=1.26.0
+    - odc-geo >=0.4.8
     - pandas
     - packaging
     - psycopg2
