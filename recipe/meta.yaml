@@ -1,6 +1,7 @@
 {% set name = "datacube" %}
 {% set version = "1.9.2" %}
 {% set sha256 = "71773c03b78072378cd5ca323251bacd03d012539363cc78b44b3363288ebed6" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -21,12 +22,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm >=3.4
     - toml
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - affine
     - antimeridian
     - attrs >=18.1
@@ -81,7 +82,7 @@ test:
     - datacube-search --help
   requires:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
 
 about:
   home: http://www.opendatacube.org
