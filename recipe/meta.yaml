@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.9.2" %}
-{% set sha256 = "71773c03b78072378cd5ca323251bacd03d012539363cc78b44b3363288ebed6" %}
+{% set version = "1.9.3" %}
+{% set sha256 = "f85fc33418874070710f11dae54d8e5570102973d5b12638142a51f5514f4360" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - datacube = datacube.scripts.cli_app:cli
