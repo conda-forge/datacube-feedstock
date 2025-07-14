@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.9.5" %}
-{% set sha256 = "61ff403423e40fb425cbcfd9441dad5bc38d706627e99ac249925dd78a89a859" %}
+{% set version = "1.9.6" %}
+{% set sha256 = "dbc97c945592b9d0883923b9d64efc4fb6c00dc4487df77d89110e0a5212bf95" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -46,6 +46,8 @@ requirements:
     - netcdf4
     - numpy >=1.26.0
     - odc-geo >=0.4.8
+    - odc-loader <=0.5.1
+    - odc-stac >=0.4.0
     - pandas
     - packaging
     - psycopg2
