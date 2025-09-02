@@ -96,7 +96,7 @@ about:
     Open Data Cube Core provides an integrated gridded data analysis environment
     for decades of analysis ready earth observation satellite and related data
     from multiple satellite and other acquisition systems.
-  doc_url: http://datacube-core.readthedocs.io
+  doc_url: http://datacube.readthedocs.io
   dev_url: https://github.com/opendatacube/datacube-core
 
 extra:
