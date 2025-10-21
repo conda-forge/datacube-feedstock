@@ -101,6 +101,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - pjonsson
     - andrewdhicks
     - SpacemanPaul
     - jeremyh
