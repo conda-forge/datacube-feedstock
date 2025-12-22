@@ -29,7 +29,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - affine
-    - antimeridian
+    - antimeridian <0.4.5
     - attrs >=18.1
     - boto3
     - botocore
@@ -45,9 +45,9 @@ requirements:
     - lark
     - netcdf4
     - numpy >=1.26.0
-    - odc-geo >=0.4.8
-    - odc-loader <=0.5.1
-    - odc-stac >=0.4.0
+    - odc-geo >=0.5.0
+    - odc-loader <=0.6.0
+    - odc-stac >=0.5.0
     - pandas
     - packaging
     - psycopg2
