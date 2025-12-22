@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.9.11" %}
-{% set sha256 = "987e424aa88a170811699f0f0540de7bd7632f5dcf53e7cd2dd4e92ef7bee606" %}
+{% set version = "1.9.12" %}
+{% set sha256 = "dc4bc524c4d8f5f2ef8afa31e13cb381c7bdb1b69990d6f83cc6fb5a91091678" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -29,7 +29,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - affine
-    - antimeridian
+    - antimeridian <0.4.5
     - attrs >=18.1
     - boto3
     - botocore
@@ -45,9 +45,9 @@ requirements:
     - lark
     - netcdf4
     - numpy >=1.26.0
-    - odc-geo >=0.4.8
-    - odc-loader <=0.5.1
-    - odc-stac >=0.4.0
+    - odc-geo >=0.5.0
+    - odc-loader <=0.6.0
+    - odc-stac >=0.5.0
     - pandas
     - packaging
     - psycopg2
