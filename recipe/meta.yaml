@@ -1,7 +1,7 @@
 {% set name = "datacube" %}
-{% set version = "1.9.12" %}
-{% set sha256 = "dc4bc524c4d8f5f2ef8afa31e13cb381c7bdb1b69990d6f83cc6fb5a91091678" %}
-{% set python_min = "3.10" %}
+{% set version = "1.9.13" %}
+{% set sha256 = "699b44784a5695209cdba4f90b98f08de11cce6e3ae3877df19555c54e2420c7" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -22,13 +22,14 @@ build:
 requirements:
   host:
     - pip
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm >=3.4
     - toml
   run:
     - python >={{ python_min }}
     - affine
+    - alembic
     - antimeridian <0.4.5
     - attrs >=18.1
     - boto3
@@ -39,26 +40,26 @@ requirements:
     - dask-core
     - deprecat
     - distributed
-    - pyproj >=2.5
-    - shapely >=2
+    - geoalchemy2 >=0.17.0
     - jsonschema >=4.18
     - lark
     - netcdf4
     - numpy >=1.26.0
     - odc-geo >=0.5.0
-    - odc-loader <=0.6.0
-    - odc-stac >=0.5.0
-    - pandas
+    - odc-loader <=0.6.4
+    - odc-stac >=0.5.1
     - packaging
+    - pandas
     - psycopg2
+    - pyproj >=3.0.0
     - python-dateutil
     - pyyaml
-    - rasterio >=1.3.11
-    - sqlalchemy >=2.0
-    - alembic
-    - geoalchemy2 >=0.17.0
-    - xarray >2022.6.0
+    - rasterio >=1.4.4
     - ruamel.yaml
+    - scikit-image
+    - shapely >=2
+    - sqlalchemy >=2.0
+    - xarray >2022.6.0
     - toolz
 
 test:
