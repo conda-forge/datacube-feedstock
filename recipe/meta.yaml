@@ -1,7 +1,7 @@
 {% set name = "datacube" %}
 {% set version = "1.9.13" %}
 {% set sha256 = "699b44784a5695209cdba4f90b98f08de11cce6e3ae3877df19555c54e2420c7" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -51,7 +51,7 @@ requirements:
     - packaging
     - pandas
     - psycopg2
-    - pyproj >=2.5
+    - pyproj >=3.0.0
     - python-dateutil
     - pyyaml
     - rasterio >=1.4.4
