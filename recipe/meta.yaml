@@ -45,8 +45,8 @@ requirements:
     - lark
     - netcdf4
     - numpy >=1.26.0
-    - odc-geo >=0.5.0
-    - odc-loader <=0.6.3
+    - odc-geo >=0.5.1
+    - odc-loader <=0.6.4
     - odc-stac >=0.5.0
     - packaging
     - pandas
