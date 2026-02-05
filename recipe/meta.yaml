@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.9.13" %}
-{% set sha256 = "699b44784a5695209cdba4f90b98f08de11cce6e3ae3877df19555c54e2420c7" %}
+{% set version = "1.9.14" %}
+{% set sha256 = "9fdf9b1b7683b0934da7791aa0fe73e13ad1b4780070814b27d02a037a5e4605" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -35,7 +35,7 @@ requirements:
     - boto3
     - botocore
     - cachetools
-    - click >=8.0
+    - click >=8.2
     - cloudpickle >=0.4
     - dask-core
     - deprecat
@@ -46,7 +46,7 @@ requirements:
     - netcdf4
     - numpy >=1.26.0
     - odc-geo >=0.5.0
-    - odc-loader <=0.6.4
+    - odc-loader >=0.6.4
     - odc-stac >=0.5.1
     - packaging
     - pandas
