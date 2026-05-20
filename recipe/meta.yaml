@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.9.18" %}
-{% set sha256 = "f43ddbffa43980098a202920eca52968b729f48881424dc1b5fec3544a894607" %}
+{% set version = "1.9.19" %}
+{% set sha256 = "39b94e146a05b1c13c4bf974f546b3a0dd70ed5e85a3ea5b57fc095f1a419613" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -34,7 +34,7 @@ requirements:
     - boto3
     - botocore
     - cachetools
-    - click >=8.2
+    - click >=8.2,<8.4
     - dask-core
     - deprecat
     - distributed
