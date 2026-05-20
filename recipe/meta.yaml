@@ -34,7 +34,7 @@ requirements:
     - boto3
     - botocore
     - cachetools
-    - click >=8.2,click<8.4
+    - click >=8.2,<8.4
     - dask-core
     - deprecat
     - distributed
