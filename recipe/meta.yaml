@@ -1,14 +1,14 @@
 {% set name = "datacube" %}
-{% set version = "1.9.20" %}
-{% set sha256 = "d8412863922c12912c25cb70449fcabc21d836e92ba048e0c6fa8704b902ab99" %}
-{% set python_min = "3.11" %}
+{% set version = "1.9.21" %}
+{% set sha256 = "4d6fdb7764f6df9ec47ceda91dd71bf101bb4b92d52c75af12e7a230e0cd195e" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/f0/bc/281bf9a9a3cb9408c04d263d7e18019b4b17dc74c52f4edd91b142175d55/datacube-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
