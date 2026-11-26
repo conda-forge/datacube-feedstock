@@ -53,7 +53,7 @@ requirements:
     - pyyaml
     - rasterio >=1.4.4
     - scikit-image
-    - shapely >=2
+    - shapely >=2,!=2.2.0
     - sqlalchemy >=2.0
     - xarray >2022.6.0
     - toolz
