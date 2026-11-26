@@ -1,6 +1,6 @@
 {% set name = "datacube" %}
-{% set version = "1.9.22" %}
-{% set sha256 = "63e5d0f08f43faeaa55676f5602e809b01f92d5ff22102ae488a93866add1ae7" %}
+{% set version = "1.9.23" %}
+{% set sha256 = "87802219f4c0cfbd02d28487eece17312b87f91eedae51fe2e2111aa4ce130ad" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/db/99/bb58dc99b1f44bb74551d1e7849a619a9c32e9164abd46657237c712453b/datacube-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/08/7d/438f7d0c758f4d65f9066514641fbde101e2135a97211fbf7f5f36f32b56/datacube-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -53,7 +53,7 @@ requirements:
     - pyyaml
     - rasterio >=1.4.4
     - scikit-image
-    - shapely >=2
+    - shapely >=2,!=2.2.0
     - sqlalchemy >=2.0
     - xarray >2022.6.0
     - toolz
